@@ -1,34 +1,64 @@
-# wealth_vally_task
-in this repo task code of based on spring boot 
-Step 1: Open IntelliJ IDEA and Create a Project
-1.	Open IntelliJ IDEA.
-2.	Click File → New → Project.
-3.	Select Java from the project types.
-4.	Ensure the Project SDK points to your installed JDK.
-5.	Click Next → Next → Finish.
+How to Run the Project using IntelliJ IDEA
+
+Step 1: Create a Java Project
+Open IntelliJ IDEA
+Click File → New → Project
+
+Make sure a JDK is selected under Project SDK
+Click Next → Next → Finish
+Note: This is a plain Java application, not a Spring Boot project.
+
 Step 2: Create Package and Class
-1.	In the Project view, right-click src → New → Package.
-2.	Name the package task_wealth_vally.
-3.	Right-click the package → New → Java Class.
-4.	Name the class PolicyManagementApp.
-You can keep the PolicyHolder class inside this file or in a separate file.
-Step 3: Paste Your Code
-•	Copy your full Java code into PolicyManagementApp.java.
-•	Ensure there are no syntax errors.
+In the Project window, right-click src → New → Package
+
+Name the package: task_wealth_vally
+
+Right-click the package → New → Java Class
+Name the class: PolicyManagementApp
+
+You can keep the PolicyHolder class inside the same file or create a separate file for it.
+
+Step 3: Paste the Code
+Copy and paste your complete Java program into PolicyManagementApp.java
+
+Ensure the package name at the top is:
+
+
+package task_wealth_vally;
+
 Step 4: Build the Project
-1.	Click Build → Build Project (or press Ctrl + F9).
-2.	Fix any compilation errors if highlighted.
+Click Build → Build Project
+Fix any compilation errors if shown.
+
 Step 5: Run the Program
-1.	Click the green Run button next to the main method, or
-2.	Right-click PolicyManagementApp.java → Run ‘PolicyManagementApp.main()’.
-3.	The Run console will appear.
-4.	Enter inputs as prompted:
-o	Number of policy holders
-o	Policy ID, Name, Investment Amount, Years in Force
-5.	The program will display:
-o	Maturity value for the first policy
-o	List of policies with investment > 100,000
-Step 6: Example Run
+Click the green Run button next to the main() method
+OR
+Right-click PolicyManagementApp.java → Run 'PolicyManagementApp.main()'
+
+Program Flow
+The program performs the following operations:
+Accepts number of policy holders from the user
+
+Takes policy details as input:
+
+Policy ID
+
+Holder Name
+
+Investment Amount
+
+Years in Force
+
+Calculates maturity value for the first policy holder
+Displays all policies whose investment amount is greater than 100,000
+
+
+
+
+
+Sample Input
+
+
 How many policy holders you want to enter?
 2
 
@@ -44,9 +74,12 @@ Enter Name: Bob
 Enter Investment Amount: 90000
 Enter Years in Force: 3
 
+
+Sample Output
+
+
+
 Maturity Value for Alice: 176580.83
+
 High Value Policies (Investment > 100000):
 P001 | Alice | Amount: 120000.0 | Years: 5
-
-
-
